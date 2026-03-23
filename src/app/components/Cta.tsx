@@ -24,7 +24,7 @@ export default function Cta() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
             {/* メール */}
             <a
-              href="mailto:info@mh-lab.co.jp"
+              href="mailto:info@mhlab.one"
               className="group flex items-center gap-4 bg-white/5 border border-white/10 hover:border-indigo/40 hover:bg-indigo/5 transition-all duration-300 rounded-xl p-5 text-left"
             >
               <div className="w-10 h-10 rounded-lg bg-indigo/20 text-indigo-300 flex items-center justify-center shrink-0">
@@ -35,7 +35,7 @@ export default function Cta() {
               <div>
                 <p className="font-sans text-xs text-white/40 tracking-wider mb-0.5">メールでお問い合わせ</p>
                 <p className="font-sans text-sm text-white group-hover:text-indigo-300 transition-colors duration-200">
-                  info@mh-lab.co.jp
+                  info@mhlab.one
                 </p>
               </div>
             </a>

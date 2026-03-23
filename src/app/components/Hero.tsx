@@ -1,6 +1,6 @@
 const stats = [
-  { value: '2+', label: '制作実績' },
-  { value: '5+', label: '対応業種' },
+  { value: '4+', label: '制作実績' },
+  { value: '4', label: '対応業種' },
   { value: '最短', label: '3日で公開' },
 ]
 

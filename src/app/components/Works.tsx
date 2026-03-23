@@ -9,9 +9,8 @@ const works = [
     description:
       'くすみピンク×ベージュの上質な雰囲気。スタイリスト紹介・スタイルギャラリー・LINE予約など、美容室に必要な機能をすべて網羅したワンページLP。',
     tags: ['美容室', 'ヘアサロン', 'LP', 'LINE予約'],
-    url: 'https://hair-salon-lien.vercel.app',
+    url: 'https://hair-salon-lien.vercel.app/',
     thumbnail: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1200&q=80',
-    accentColor: '#c4a68a',
     accentBg: 'bg-amber-50',
     accentText: 'text-amber-700',
     accentBorder: 'border-amber-200',
@@ -24,12 +23,39 @@ const works = [
     description:
       'ワインレッドが映える本格イタリアンLP。手打ちパスタへのこだわりや厳選ワインを魅力的に訴求。ギャラリー・ネット予約誘導・フォームを完備。',
     tags: ['飲食店', 'イタリアン', 'LP', 'ご予約フォーム'],
-    url: 'https://trattoria-sole-two.vercel.app',
+    url: 'https://trattoria-sole-two.vercel.app/',
     thumbnail: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80',
-    accentColor: '#722f37',
     accentBg: 'bg-red-50',
     accentText: 'text-red-800',
     accentBorder: 'border-red-200',
+  },
+  {
+    id: 3,
+    category: '工務店 / リフォーム',
+    name: '丸山建設',
+    nameJp: 'マルヤマケンセツ',
+    description:
+      '信頼感と実直さが伝わる工務店コーポレートサイト。施工事例・サービス紹介・会社概要を複数ページで構成し、地域密着型の温かみあるデザインに仕上げました。',
+    tags: ['工務店', 'コーポレートサイト', '複数ページ', '施工事例'],
+    url: 'https://maruyama-construction.vercel.app/',
+    thumbnail: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
+    accentBg: 'bg-stone-50',
+    accentText: 'text-stone-700',
+    accentBorder: 'border-stone-200',
+  },
+  {
+    id: 4,
+    category: '整骨院 / 接骨院',
+    name: 'あおば整骨院',
+    nameJp: 'アオバセイコツイン',
+    description:
+      '清潔感と安心感を大切にした整骨院LP。施術メニュー・院長紹介・アクセス情報を分かりやすく配置し、初めて来院する方が安心して予約できるサイト設計。',
+    tags: ['整骨院', '接骨院', 'LP', '予約導線'],
+    url: 'https://aoba-seikotsuin.vercel.app/',
+    thumbnail: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1200&q=80',
+    accentBg: 'bg-teal-50',
+    accentText: 'text-teal-700',
+    accentBorder: 'border-teal-200',
   },
 ]
 
@@ -60,7 +86,7 @@ export default function Works() {
               }`}
             >
               {/* ブラウザモック */}
-              <div className={`browser-mock ${i % 2 === 1 ? 'delay-1' : ''}`}>
+              <div className="browser-mock">
                 {/* ブラウザバー */}
                 <div className="bg-slate-200 px-4 py-3 flex items-center gap-3">
                   <div className="flex gap-1.5 shrink-0">
@@ -142,16 +168,6 @@ export default function Works() {
               </div>
             </article>
           ))}
-        </div>
-
-        {/* 今後追加予定ノート */}
-        <div className="mt-20 text-center animate-on-scroll">
-          <div className="inline-flex items-center gap-3 border border-dashed border-border rounded-lg px-8 py-5 text-muted">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
-            </svg>
-            <span className="font-sans text-sm">工務店・クリニック・士業など、順次追加予定</span>
-          </div>
         </div>
       </div>
     </section>

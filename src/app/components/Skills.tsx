@@ -11,7 +11,7 @@ const industries = [
   { icon: '✂️', name: '美容室・サロン', done: true },
   { icon: '🍝', name: '飲食店・カフェ', done: true },
   { icon: '🏗️', name: '工務店・リフォーム', done: true },
-  { icon: '🏥', name: 'クリニック・整体', done: false },
+  { icon: '🏥', name: '整骨院・クリニック', done: true },
   { icon: '⚖️', name: '士業・コンサル', done: false },
   { icon: '🛍️', name: 'EC・ショップ', done: false },
   { icon: '🏨', name: 'ホテル・宿泊', done: false },
