@@ -12,10 +12,10 @@ const industries = [
   { icon: '🍝', name: '飲食店・カフェ', done: true },
   { icon: '🏗️', name: '工務店・リフォーム', done: true },
   { icon: '🏥', name: '整骨院・クリニック', done: true },
-  { icon: '⚖️', name: '士業・コンサル', done: false },
-  { icon: '🛍️', name: 'EC・ショップ', done: false },
-  { icon: '🏨', name: 'ホテル・宿泊', done: false },
-  { icon: '📚', name: 'スクール・教室', done: false },
+  { icon: '⚖️', name: '士業・コンサル', done: true },
+  { icon: '🛍️', name: 'EC・ショップ', done: true },
+  { icon: '🏨', name: 'ホテル・宿泊', done: true },
+  { icon: '📚', name: 'スクール・教室', done: true },
 ]
 
 const features = [

@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* ロゴ */}
           <div className="flex items-baseline gap-2">
-            <span className="font-playfair font-bold text-base text-white tracking-wide">SiteBoost</span>
-            <span className="font-sans text-xs font-medium text-indigo tracking-widest">AI</span>
+            <span className="font-playfair font-bold text-base text-white tracking-wide">MH Creative</span>
+            <span className="font-sans text-xs font-medium text-indigo tracking-widest">Portfolio</span>
             <span className="font-sans text-xs ml-2">– 合同会社MH研究所</span>
           </div>
 

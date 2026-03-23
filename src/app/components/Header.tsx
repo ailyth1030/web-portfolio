@@ -45,12 +45,12 @@ export default function Header() {
           <span className={`font-playfair font-bold text-lg tracking-wide transition-colors duration-300 ${
             scrolled ? 'text-primary' : 'text-white'
           }`}>
-            SiteBoost
+            MH Creative
           </span>
           <span className={`font-sans text-xs font-medium tracking-widest transition-colors duration-300 ${
             scrolled ? 'text-indigo' : 'text-indigo-300'
           }`}>
-            AI
+            Portfolio
           </span>
         </a>
 

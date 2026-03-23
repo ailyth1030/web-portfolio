@@ -25,20 +25,20 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Web制作実績 | SiteBoost AI – 合同会社MH研究所',
+  title: 'Web制作実績 | MH Creative Portfolio – 合同会社MH研究所',
   description:
     '中小企業・個人商店向けの本格Webサイト制作。美容室・飲食店・工務店など業種別のデモサイトをご覧いただけます。Next.js × Tailwind CSSによる高品質なLP制作。',
   keywords: ['Web制作', 'ホームページ制作', 'LP制作', 'Next.js', '東京', '格安', 'SiteBoost'],
   openGraph: {
-    title: 'Web制作実績 | SiteBoost AI',
+    title: 'Web制作実績 | MH Creative Portfolio',
     description: '業種別のデモサイトをご覧ください。美容室・飲食店・工務店など対応実績多数。',
     type: 'website',
     locale: 'ja_JP',
-    siteName: 'SiteBoost AI',
+    siteName: 'MH Creative Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web制作実績 | SiteBoost AI',
+    title: 'Web制作実績 | MH Creative Portfolio',
     description: '業種別のデモサイトをご覧ください。',
   },
   robots: { index: true, follow: true },

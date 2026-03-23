@@ -1,9 +1,3 @@
-const stats = [
-  { value: '4+', label: '制作実績' },
-  { value: '4', label: '対応業種' },
-  { value: '最短', label: '3日で公開' },
-]
-
 export default function Hero() {
   const scrollToWorks = () => {
     document.querySelector('#works')?.scrollIntoView({ behavior: 'smooth' })
@@ -31,7 +25,7 @@ export default function Hero() {
         {/* バッジ */}
         <div className="inline-flex items-center gap-2 bg-indigo/10 border border-indigo/30 text-indigo-300 px-4 py-1.5 rounded-full mb-8 animate-fade-in">
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-          <span className="font-sans text-xs tracking-widest">SiteBoost AI — Web制作サービス</span>
+          <span className="font-sans text-xs tracking-widest">合同会社MH研究所 — Web制作実績</span>
         </div>
 
         {/* キャッチコピー */}
@@ -41,7 +35,7 @@ export default function Hero() {
         </h1>
 
         <p className="font-sans font-light text-white/60 text-sm md:text-base leading-relaxed mb-12 max-w-xl mx-auto animate-fade-in">
-          美容室・飲食店・工務店など、業種に合わせた本格Webサイトを制作します。<br />
+          美容室・飲食店・工務店・整骨院など、業種に合わせた本格Webサイトを制作します。<br />
           下記のデモサイトから、実際の仕上がりをご確認ください。
         </p>
 
@@ -61,16 +55,6 @@ export default function Hero() {
           >
             無料相談はこちら
           </a>
-        </div>
-
-        {/* 統計 */}
-        <div className="mt-20 grid grid-cols-3 gap-6 max-w-sm mx-auto animate-fade-in">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="font-playfair text-3xl font-bold text-white">{stat.value}</p>
-              <p className="font-sans text-xs text-white/40 mt-1 tracking-wider">{stat.label}</p>
-            </div>
-          ))}
         </div>
       </div>
 
