@@ -132,10 +132,15 @@ export default function Works() {
 
               {/* テキスト */}
               <div>
-                <span className={`font-sans text-xs font-medium tracking-widest uppercase tag ${work.accentBg} ${work.accentText} border ${work.accentBorder}`}>
-                  {work.category}
-                </span>
-                <h3 className="font-playfair text-2xl md:text-3xl font-semibold text-primary mt-4 mb-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="font-playfair italic text-4xl font-bold text-indigo/10 leading-none select-none">
+                    {String(work.id).padStart(2, '0')}
+                  </span>
+                  <span className={`font-sans text-xs font-medium tracking-widest uppercase tag ${work.accentBg} ${work.accentText} border ${work.accentBorder}`}>
+                    {work.category}
+                  </span>
+                </div>
+                <h3 className="font-playfair text-2xl md:text-3xl font-semibold text-primary mb-1">
                   {work.name}
                 </h3>
                 <p className="font-sans text-xs text-muted tracking-widest mb-5">{work.nameJp}</p>

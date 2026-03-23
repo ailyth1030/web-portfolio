@@ -1,50 +1,50 @@
 const techStack = [
-  { name: 'Next.js', desc: 'React フレームワーク', color: 'bg-slate-900 text-white' },
+  { name: 'Next.js', desc: 'Reactフレームワーク', color: 'bg-slate-900 text-white' },
   { name: 'TypeScript', desc: '型安全な開発', color: 'bg-blue-600 text-white' },
   { name: 'Tailwind CSS', desc: 'ユーティリティCSS', color: 'bg-cyan-500 text-white' },
   { name: 'Vercel', desc: '高速デプロイ', color: 'bg-slate-800 text-white' },
   { name: 'Google Fonts', desc: '日本語対応フォント', color: 'bg-indigo-500 text-white' },
-  { name: 'Unsplash API', desc: '高品質フリー素材', color: 'bg-emerald-600 text-white' },
+  { name: 'Unsplash', desc: '高品質フリー素材', color: 'bg-emerald-600 text-white' },
 ]
 
 const industries = [
-  { icon: '✂️', name: '美容室・サロン', done: true },
-  { icon: '🍝', name: '飲食店・カフェ', done: true },
-  { icon: '🏗️', name: '工務店・リフォーム', done: true },
-  { icon: '🏥', name: '整骨院・クリニック', done: true },
-  { icon: '⚖️', name: '士業・コンサル', done: true },
-  { icon: '🛍️', name: 'EC・ショップ', done: true },
-  { icon: '🏨', name: 'ホテル・宿泊', done: true },
-  { icon: '📚', name: 'スクール・教室', done: true },
+  { icon: '✂️', name: '美容室・ヘアサロン' },
+  { icon: '🍝', name: '飲食店・カフェ・バー' },
+  { icon: '🏗️', name: '工務店・リフォーム' },
+  { icon: '🏥', name: '整骨院・クリニック' },
+  { icon: '⚖️', name: '士業・コンサルタント' },
+  { icon: '🛍️', name: 'EC・ネットショップ' },
+  { icon: '🏨', name: 'ホテル・宿泊施設' },
+  { icon: '📚', name: 'スクール・教室' },
 ]
 
 const features = [
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
     title: 'スマホ完全対応',
-    desc: 'すべてのデバイスで美しく表示されるレスポンシブデザイン。',
+    desc: 'あらゆるデバイスで美しく表示されるレスポンシブデザイン。スマホでの閲覧率が高い業種でも安心です。',
   },
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: '表示速度が速い',
-    desc: 'Next.jsの静的生成で、Lighthouseスコア90点以上を実現。',
+    title: '高速表示',
+    desc: 'Next.jsの静的生成により、Lighthouseスコア90点以上を実現。表示が遅いと離脱する訪問者を逃しません。',
   },
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     ),
     title: 'SEO対策済み',
-    desc: 'メタタグ・OGP・セマンティックHTMLで検索対策も万全。',
+    desc: 'メタタグ・OGP・構造化されたHTMLで検索エンジン対策も標準装備。Googleに正しく認識されるサイトを制作します。',
   },
 ]
 
@@ -63,29 +63,30 @@ export default function Skills() {
         </div>
 
         {/* 3つの強み */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
           {features.map((f, i) => (
-            <div key={f.title} className={`bg-offwhite rounded-xl p-8 animate-on-scroll delay-${i + 1}`}>
-              <div className="w-12 h-12 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center mb-5">
+            <div key={f.title} className={`group relative bg-offwhite rounded-2xl p-8 hover:bg-indigo/5 transition-colors duration-300 animate-on-scroll delay-${i + 1}`}>
+              <div className="w-10 h-10 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center mb-5 group-hover:bg-indigo group-hover:text-white transition-colors duration-300">
                 {f.icon}
               </div>
-              <h3 className="font-serif text-lg font-semibold text-primary mb-2">{f.title}</h3>
+              <h3 className="font-serif text-base font-semibold text-primary mb-2">{f.title}</h3>
               <p className="font-sans font-light text-secondary text-sm leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* 技術スタック */}
           <div className="animate-on-scroll">
-            <h3 className="font-serif text-xl font-semibold text-primary mb-6">使用技術</h3>
-            <div className="grid grid-cols-2 gap-3">
+            <h3 className="font-serif text-xl font-semibold text-primary mb-2">使用技術</h3>
+            <p className="font-sans text-xs text-muted mb-6">モダンな技術スタックで高品質なサイトを構築します。</p>
+            <div className="space-y-2.5">
               {techStack.map((tech) => (
-                <div key={tech.name} className="flex items-center gap-3 bg-offwhite rounded-lg p-3">
-                  <span className={`font-sans text-xs font-bold px-2.5 py-1 rounded ${tech.color} shrink-0`}>
+                <div key={tech.name} className="flex items-center gap-3 py-2.5 border-b border-border last:border-0">
+                  <span className={`font-sans text-xs font-bold px-2.5 py-1 rounded shrink-0 ${tech.color}`}>
                     {tech.name}
                   </span>
-                  <span className="font-sans text-xs text-secondary">{tech.desc}</span>
+                  <span className="font-sans text-sm text-secondary">{tech.desc}</span>
                 </div>
               ))}
             </div>
@@ -93,24 +94,16 @@ export default function Skills() {
 
           {/* 対応業種 */}
           <div className="animate-on-scroll delay-2">
-            <h3 className="font-serif text-xl font-semibold text-primary mb-6">対応業種</h3>
-            <div className="grid grid-cols-2 gap-2.5">
+            <h3 className="font-serif text-xl font-semibold text-primary mb-2">対応業種</h3>
+            <p className="font-sans text-xs text-muted mb-6">業種を問わず幅広く対応いたします。</p>
+            <div className="space-y-1">
               {industries.map((ind) => (
-                <div
-                  key={ind.name}
-                  className={`flex items-center gap-3 rounded-lg p-3 border ${
-                    ind.done
-                      ? 'bg-indigo/5 border-indigo/20 text-primary'
-                      : 'bg-offwhite border-border text-muted'
-                  }`}
-                >
-                  <span className="text-lg">{ind.icon}</span>
-                  <span className="font-sans text-xs font-medium">{ind.name}</span>
-                  {ind.done && (
-                    <span className="ml-auto font-sans text-[10px] text-indigo bg-indigo/10 px-2 py-0.5 rounded-full">
-                      実績あり
-                    </span>
-                  )}
+                <div key={ind.name} className="flex items-center gap-3 py-2.5 border-b border-border last:border-0">
+                  <svg className="w-4 h-4 text-indigo shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base leading-none">{ind.icon}</span>
+                  <span className="font-sans text-sm text-primary">{ind.name}</span>
                 </div>
               ))}
             </div>
